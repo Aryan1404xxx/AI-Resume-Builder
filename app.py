@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 
 # ── Load API Key from .env ────────────────────────────────
 load_dotenv()
-client = Groq(api_key=os.environ.get("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"))
+client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
 
 # ── Generate Resume Content ───────────────────────────────
 def generate_resume(name, job_title, email, phone, address, website, linkedin,
